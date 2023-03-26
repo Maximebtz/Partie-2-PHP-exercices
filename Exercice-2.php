@@ -6,6 +6,7 @@
 
 <?php
 
+//Créer tableau associatif
 $capitales = array(
     "France" => "Paris",
     "Allemagne" => "Berlin",
@@ -13,8 +14,21 @@ $capitales = array(
     "Italie" => "Rome",
 );
 
-function afficherTableHTML($pays, $pCapitale){
+
+//Créer une fonction 
+function afficherTableHTML($capitales){
+
+    ksort($capitales); //Trier par ordre alpha.
+    echo "<table style='border: solid black 1px; border-collapse: collapse;' ><tr>
+    <th style='border: solid black 1px;'>Pays</th>
+    <th style='border: solid black 1px;'>Capitales</th></tr>"; //Mettre un border a chaque <th> ou <td>
     
+    foreach($capitales as $key => $value){ //Lire le tableau
+        echo "<tr><td style='border: solid black 1px;'>" . strtoupper($key) . "</td>
+        <td style='border: solid black 1px;'>" . $value . "</td></tr>";
+    }
+    echo "</table>";
 }
-    foreach($capitales as $key => $value)
+
+afficherTableHTML($capitales);
 ?>
