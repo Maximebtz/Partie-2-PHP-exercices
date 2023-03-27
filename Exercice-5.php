@@ -11,13 +11,15 @@
 //Faire un tableau
 $nomInput = array("Nom", "Prenom", "Ville");
 
+echo "<form>";
 function afficherInput($nomInput){
    foreach($nomInput as $key) echo "
-    <form>
-    <label for='$key'>$key</label><br> 
-    <input type='text' id='$key' name='$key'/>
-    </form>";
+    
+    <br><label for='$key'>$key</label><br> 
+    <input type='text' id='$key' name='$key'/><br>";
+    
 }
-
+echo "</form>";
 afficherInput($nomInput);
+echo "<br><button>Submit</button>";
 ?>
