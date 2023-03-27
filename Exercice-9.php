@@ -17,10 +17,10 @@ $elements = array(
 );
 
 function genererCheckbox($elements){
-    
+
     echo "<label>Vous êtes : <br>";
     foreach($elements as $key){
-        echo "<input type='radio' name='$key' >$key<br>";
+        echo "<input type='radio' name='name'>$key<br>";
     }
 }
 
