@@ -21,5 +21,5 @@ function afficherInput($nomInput){
 }
 echo "</form>";
 afficherInput($nomInput);
-echo "<br><button>Submit</button>";
+echo "<br><input type='submit' name='submit' value='Submit'/>";
 ?>
