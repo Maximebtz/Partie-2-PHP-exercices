@@ -10,14 +10,15 @@ Créer une fonction personnalisée permettant de remplir une liste
 <?php
 
 $elements = array("Monsieur","Madame","Mademoiselle");
+
 echo "<label>Liste</label><br>";
 function alimenterListeDeroulante($elements){
-   
+    echo "<select>";
+   foreach($elements as $key){
     echo "
-    <select>
-        <option value='$key'></option>
-    </select>";
-    
+        <option value='$key'>$key</option>";
+    }
+    echo "</select>";
 };
 alimenterListeDeroulante($elements);
 ?>
