@@ -28,8 +28,8 @@ function afficherTableHTML($capitales){
     <th style='border: solid black 1px;'>Capitales</th>  
     <th style='border: solid black 1px;'>Lien wiki</th></tr>"; //Mettre un border a chaque <th> ou <td>
     
-    foreach($capitales as $key => $value){ //Lire le tableau
-        echo "<tr><td style='border: solid black 1px;'>" . strtoupper($key) . "</td>
+    foreach($capitales as $key => $value){ //Lire le tableau, utiliser "strtoupper()" pour mettre en majuscule
+        echo "<tr><td style='border: solid black 1px;'>" . strtoupper($key) . "</td> 
         <td style='border: solid black 1px;'>" . $value . "</td>
         <td style='border: solid black 1px;'><a href='$url".$value."' target='_blank'>Lien</a></td></tr>";
     }

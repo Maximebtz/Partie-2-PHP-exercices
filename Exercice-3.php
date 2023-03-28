@@ -10,8 +10,8 @@
 
 
 <?php
-    $url = "https://elan-formation.eu";
-    $texte = "elan formation";
+$url = "https://elan-formation.eu";
+$texte = "elan formation";
+echo "<a href='$url' target='_blank'>$texte</a>"; //Mettre un "target='_blank'" pour envoyer vers un nouvel ouglet
 ?>
-  <a href="<?php echo $url; ?>" target="_blank"><?php echo $texte; ?></a>
 

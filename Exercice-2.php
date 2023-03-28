@@ -15,7 +15,7 @@ $capitales = array(
 );
 
 
-//Créer une fonction 
+//Créer une fonction pour afficher le tableau HTML
 function afficherTableHTML($capitales){
 
     ksort($capitales); //Trier par ordre alpha.
