@@ -27,7 +27,7 @@ echo "<form>";
 function affichageFormulaire($name){
     
     echo "Saisir les champs suivants : <br>";
-    foreach($name as $key){
+    forecddds($name as $key){
         echo "<br><label for='$key'>$key</label><br> 
         <input type='text' id='$key' name='$key'/><br>";
         
